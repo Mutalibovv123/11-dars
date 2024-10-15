@@ -187,17 +187,63 @@
 
 // 7-masala
 
-function teskariTartib(massive) {
-    for (let i = 0; i < massive.length; i++) {
-        massive.sort(function(a,b) {
-           return b - a
-        })
+// function teskariTartib(massive) {
+//     for (let i = 0; i < massive.length; i++) {
+//         massive.sort(function(a,b) {
+//            return b - a
+//         })
+//     }
+//     return massive
+// }
+// let sonlar = [1,2,3,4,5,5,6,7,5,4,6,53];
+// let res = teskariTartib(sonlar);
+// console.log(res);
+
+// 8-masala
+
+// function manfiySonlarniAjratish(massive) {
+//     let newMassive = []
+//     for (let i = 0; i < massive.length; i++) {
+//         if (massive [i] < 0 ) {
+//             newMassive.push(massive[i])
+//         }
+//     }
+//     return newMassive
+// }
+// let sonlar = [-1,-2,-3,4,5,6,7,8,];
+// let res = manfiySonlarniAjratish(sonlar);
+// console.log(res);
+
+// 9-masala
+
+// function oxirgiElementiOlibTashlash(massive) {
+//     let newMassive = [];
+//     for (let i = 0; i < massive.length; i++) {
+//        newMassive.push(massive[i]);
+//        massive[i].pop();
+//     }
+  
+//     return newMassive;
+// }
+// let sonlar = [1,3,4,5,6,7,7,65,4,3,2,2,3,4,4]
+// let res = oxirgiElementiOlibTashlash(sonlar);
+// console.log(res);
+
+// 10-masala
+
+function yangiElement(massive, element) {
+
+    for (let i = 1; massive.length; i++) {
+        let res = [];
+         res.push(element);
     }
-    return massive
+    return res;
 }
-let sonlar = [1,2,3,4,5,5,6,7,5,4,6,53];
-let res = teskariTartib(sonlar);
-console.log(res);
+let sonlar = [2,4,5,6,6,77,54,12,34,5,6,7,7,6,5,4,];
+let result = yangiElement(sonlar, 12);
+console.log(result);
+
+
 
 
 
