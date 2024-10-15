@@ -110,7 +110,7 @@
 //     for (let i = 0; i <= sonlari.length; i++) {
 //         console.log(sonlari[i]);
 //     }
-    
+
 // }
 // let sonlar = [1,2,3,4,5,5,6,6];
 // let res = massivChiqar(sonlar)
@@ -222,7 +222,7 @@
 //        newMassive.push(massive[i]);
 //        massive[i].pop();
 //     }
-  
+
 //     return newMassive;
 // }
 // let sonlar = [1,3,4,5,6,7,7,65,4,3,2,2,3,4,4]
@@ -231,17 +231,31 @@
 
 // 10-masala
 
-function yangiElement(massive, element) {
+// function yangiElement(massive, element) {
 
-    for (let i = 1; massive.length; i++) {
-        let res = [];
-         res.push(element);
+//     for (let i = 1; massive.length; i++) {
+//         let res = [];
+//          res.push(element);
+//     }
+//     return res;
+// }
+// let sonlar = [2,4,5,6,6,77,54,12,34,5,6,7,7,6,5,4,];
+// let result = yangiElement(sonlar, 12);
+// console.log(result);
+
+// masala
+function musbatSonlar(massive) {
+    sum = 0;
+    for (let i = 0; i < massive.length; i++) {
+        if (massive[i] > 0) {
+            sum += massive[i]
+        }
     }
-    return res;
+    return sum;
 }
-let sonlar = [2,4,5,6,6,77,54,12,34,5,6,7,7,6,5,4,];
-let result = yangiElement(sonlar, 12);
-console.log(result);
+let sonlar = [1, 2, 3, 4, 5, 5, 56, 6,];
+let res = musbatSonlar(sonlar);
+console.log(res);
 
 
 
@@ -255,7 +269,13 @@ console.log(result);
 
 
 
-    
+
+
+
+
+
+
+
 
 
 
